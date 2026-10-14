@@ -1,0 +1,16 @@
+# PCT retraining of timm ViT-B/16 ImageNet weights, W8A8, 5 GPUs x 128 = 640 images per step
+hw: configs/hw/or.yaml
+w_bits: 8
+a_bits: 8
+model: timm:vit_base_patch16_224
+pretrained: true
+dataset: imagenet1k
+epochs: 10
+batch: 128
+optimizer: adamw
+lr: 1.0e-4
+weight_decay: 0.05
+label_smoothing: 0.1
+warmup_epochs: 2
+gpus: "0,1,2,3,4"
+resume: true

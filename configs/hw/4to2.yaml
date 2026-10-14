@@ -1,0 +1,4 @@
+name: 4to2
+compressors:
+  4to2: specs/4to2.json
+tile: [4to2]

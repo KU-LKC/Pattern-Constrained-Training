@@ -1,0 +1,4 @@
+name: or
+compressors:
+  or: specs/or.json
+tile: [or]

@@ -1,0 +1,4 @@
+name: ha
+compressors:
+  ha: specs/ha.json
+tile: [ha]

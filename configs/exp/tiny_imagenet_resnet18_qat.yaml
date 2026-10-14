@@ -1,0 +1,13 @@
+# W4A8 fake-quant QAT baseline from scratch (no pattern projection)
+hw: configs/hw/or.yaml
+no_projection: true
+w_bits: 4
+a_bits: 8
+model: builtin:resnet18
+dataset: tiny_imagenet
+epochs: 100
+batch: 256
+optimizer: sgd
+lr: 0.1
+weight_decay: 5.0e-4
+run_name: qat_w4a8

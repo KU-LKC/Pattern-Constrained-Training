@@ -1,0 +1,15 @@
+# PCT retraining of torchvision ImageNet weights, W8A8, 5 GPUs x 205 = 1025 images per step
+hw: configs/hw/or.yaml
+w_bits: 8
+a_bits: 8
+model: torchvision:resnet18
+pretrained: true
+dataset: imagenet1k
+epochs: 10
+batch: 205
+optimizer: sgd
+lr: 0.01
+weight_decay: 1.0e-4
+warmup_epochs: 1
+gpus: "0,1,2,3,4"
+resume: true

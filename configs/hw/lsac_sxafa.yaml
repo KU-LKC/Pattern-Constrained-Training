@@ -1,0 +1,6 @@
+# Two 3-input SXAFA compressors and one OR gate per 8-input tile
+name: lsac_sxafa
+compressors:
+  afa: specs/lsac_sxafa.json
+  or: specs/or.json
+tile: [afa, afa, or]

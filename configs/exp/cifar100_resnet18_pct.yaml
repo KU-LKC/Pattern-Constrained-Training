@@ -1,0 +1,12 @@
+# PCT fine-tuning of the QAT baseline; select the compressor with --hw configs/hw/<name>.yaml
+hw: configs/hw/or.yaml
+w_bits: 4
+a_bits: 8
+model: builtin:resnet18
+dataset: cifar100
+init_ckpt: runs/cifar100/builtin_resnet18/qat_w4a8/best.pth
+epochs: 10
+batch: 256
+optimizer: sgd
+lr: 0.01
+weight_decay: 5.0e-4

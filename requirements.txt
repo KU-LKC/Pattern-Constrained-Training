@@ -1,0 +1,8 @@
+torch>=2.1
+torchvision>=0.16
+numpy
+pyyaml
+pillow
+# optional: timm:<name> and hf:<repo> models
+timm>=0.9
+transformers>=4.36
